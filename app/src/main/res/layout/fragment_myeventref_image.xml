@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_fragment_myeventref_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</RelativeLayout>
+
+

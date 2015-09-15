@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hobbyathletes.hobbyathletes.info">
+
+    <ImageView
+        android:id="@+id/imageView_info_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription=""
+        android:scaleType="centerCrop"
+        android:cropToPadding="false"
+        android:focusable="false"
+        android:src="@drawable/ha_mobile_app">
+    </ImageView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:id="@+id/textView_info_name"
+                android:layout_margin="5dp"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_info_version"
+                android:gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView_info_logo"
+                android:src="@drawable/triathlon_70"
+                android:onClick="buttonOpenLink"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/copyright"
+                android:id="@+id/textView_info_copyright"
+                android:gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hobbyathletes.hobbyathletes.loginprofile.loginWebsite"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/textView_username"
+                android:id="@+id/textView_login_username"
+                android:textColor="#6C809B"
+                android:singleLine="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_login_username"
+                android:hint="@string/textView_username"
+                android:text="test_user_10"
+                android:inputType="textEmailAddress"
+                android:background="#ffffffff"
+                android:autoText="false"
+                android:layout_marginLeft="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/textView_password"
+                android:id="@+id/textView_login_password"
+                android:textColor="#6C809B" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:text="test1234"
+                android:id="@+id/editText_login_password"
+                android:hint="@string/textView_password"
+                android:background="#ffffffff"
+                android:layout_marginLeft="15dp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp">
+
+            <Button
+                android:layout_height="wrap_content"
+                android:text="@string/button_login"
+                android:id="@+id/button_loginWebsite_login"
+                android:layout_width="120dp"
+                android:background="@drawable/button_border"
+                android:textColor="#ff50607a"
+                android:onClick="buttonLogin"
+                android:layout_marginRight="5dp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

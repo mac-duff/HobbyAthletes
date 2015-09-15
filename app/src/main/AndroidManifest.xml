@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hobbyathletes.hobbyathletes" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/triathlon_70"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyEvent.myevent"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_myevent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".loginprofile.login"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_login"
+            >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".profile"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".MyEvent.myeventref"
+            android:label="@string/title_activity_myeventref"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".about"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/title_activity_my" >
+        </activity>
+    </application>
+
+</manifest>

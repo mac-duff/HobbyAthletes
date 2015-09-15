@@ -1,0 +1,100 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ebebeb">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_login_logo"
+            android:src="@drawable/logo_yb" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout_login_already">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already"
+            android:id="@+id/textView_login_already"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout_login_website"></FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/linearLayout_login_link">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:id="@+id/textView_login_signup"
+            android:gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:onClick="buttonSignUp"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot"
+            android:id="@+id/textView_login_forgot"
+            android:gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:onClick="buttonForgotPassword"
+            android:clickable="true" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout_login_facebook">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout_login_profile"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout_login_logoff">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="@string/button_logoff"
+            android:id="@+id/button_login_logoff"
+            android:layout_width="120dp"
+            android:background="@drawable/button_border"
+            android:textColor="#ff50607a"
+            android:onClick="buttonLogoff"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>
